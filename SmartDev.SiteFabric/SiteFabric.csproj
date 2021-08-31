@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>SmartDev.SiteFabric</RootNamespace>
+	<GenerateEmbeddedFilesManifest>true</GenerateEmbeddedFilesManifest>
+  </PropertyGroup>
+
+  <ItemGroup>
+	<FrameworkReference Include="Microsoft.AspNetCore.App" />
+	<PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="5.0.9" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Identity.Core" Version="5.0.9" />
+    <PackageReference Include="Microsoft.Extensions.Identity.Stores" Version="5.0.9" />
+	<PackageReference Include="Microsoft.Extensions.FileProviders.Embedded" Version="5.0.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SmartDev.SiteFabric.Core\SiteFabric.Core.csproj" />
+    <ProjectReference Include="..\SmartDev.SiteFabric.Razor\SiteFabric.Razor.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\Fabric\" />
+  </ItemGroup>
+
+</Project>

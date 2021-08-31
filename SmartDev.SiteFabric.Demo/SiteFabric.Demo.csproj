@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <UserSecretsId>aspnet-SmartDev.SiteFabric.Demo-29D31FB8-A32A-4707-98E6-2CB9605EAE9E</UserSecretsId>
+    <AssemblyName>SiteFabric.Demo</AssemblyName>
+    <RootNamespace>SmartDev.SiteFabric.Demo</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Fabric\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SmartDev.SiteFabric.Razor\SiteFabric.Razor.csproj" />
+    <ProjectReference Include="..\SmartDev.SiteFabric\SiteFabric.csproj" />
+  </ItemGroup>
+
+</Project>
